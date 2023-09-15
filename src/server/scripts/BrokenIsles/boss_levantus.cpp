@@ -182,7 +182,7 @@ public:
 
                 Trinity::AnyFriendlyUnitInObjectRangeCheck u_check(_areatrigger, caster, radius);
                 Trinity::UnitListSearcher<Trinity::AnyFriendlyUnitInObjectRangeCheck> searcher(_areatrigger, targetList, u_check);
-                Cell::VisitAllObjects(_areatrigger, searcher, radius);
+                ///Cell::VisitAllObjects(_areatrigger, searcher, radius);
 
                 if (!targetList.empty())
                     for (auto itr : targetList)

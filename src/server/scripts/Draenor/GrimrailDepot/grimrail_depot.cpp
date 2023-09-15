@@ -1392,7 +1392,7 @@ class grimrail_depot_at_healing_rain : public AreaTriggerEntityScript
                 {                 
                     Trinity::AnyFriendlyUnitInObjectRangeCheck checker(caster, caster, l_Radius);
                     Trinity::UnitListSearcher<Trinity::AnyFriendlyUnitInObjectRangeCheck> searcher(caster, templist, checker);
-                    Cell::VisitAllObjects(caster, searcher, l_Radius);
+                    ///Cell::VisitAllObjects(caster, searcher, l_Radius);
 
                     if (!templist.empty())
                     {
@@ -1449,7 +1449,7 @@ public:
                 {
                     Trinity::AnyFriendlyUnitInObjectRangeCheck checker(caster, caster, l_Radius);
                     Trinity::UnitListSearcher<Trinity::AnyFriendlyUnitInObjectRangeCheck> searcher(caster, l_TargetList, checker);
-                    Cell::VisitAllObjects(caster, searcher, l_Radius);
+                    ///Cell::VisitAllObjects(caster, searcher, l_Radius);
 
                     if (!l_TargetList.empty())
                     {

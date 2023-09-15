@@ -996,7 +996,7 @@ public:
                     std::list<Unit*> unfriendlyList;
                     Trinity::AnyUnfriendlyUnitInObjectRangeCheck checker(me, me, 4.0f);
                     Trinity::UnitListSearcher<Trinity::AnyUnfriendlyUnitInObjectRangeCheck> searcher(me, unfriendlyList, checker);
-                    Cell::VisitAllObjects(me, searcher, 3.4f);
+                    ///Cell::VisitAllObjects(me, searcher, 3.4f);
 
                     for (Unit* unit : unfriendlyList)
                     {
